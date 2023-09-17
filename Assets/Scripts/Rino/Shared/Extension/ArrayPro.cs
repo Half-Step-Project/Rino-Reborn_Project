@@ -1,4 +1,4 @@
-namespace Rino.Global.Extension
+namespace Rino.Shared.Extension
 {
     public class ArrayPro<T>
     {

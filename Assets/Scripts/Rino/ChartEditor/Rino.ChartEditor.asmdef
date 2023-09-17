@@ -1,0 +1,16 @@
+{
+    "name": "Rino.ChartEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4ae89ea67a1f78f4db590f20235ad901"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
