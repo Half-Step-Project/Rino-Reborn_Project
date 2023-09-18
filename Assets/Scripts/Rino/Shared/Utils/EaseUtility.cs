@@ -13,11 +13,20 @@ namespace Rino.Shared.Utils
             InQuart = 10, OutQuart = 11, InOutQuart = 12,
             Zero = 13, One = 14
         }
-
-        // Todo: Remove the ranges
+        
         public static float Evaluate(Ease easeType, float time, float duration, float startRange, float endRange)
         {
             var range = endRange - startRange;
+            
+            if (duration <= 0) return 0;
+
+            // 小小优化一下
+            if (easeType is Ease.Linear || startRange <= 0f && endRange >= 1f || range <= 0f)
+            {
+                return Evaluate(easeType, time, duration);
+            }
+
+            // 缓动截取映射
             var realTime = duration * startRange + time * range;
             var startEase = Evaluate(easeType, startRange, 1f);
             var endEase = Evaluate(easeType, endRange, 1f);
