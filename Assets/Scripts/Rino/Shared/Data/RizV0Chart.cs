@@ -1,5 +1,6 @@
 using System;
 using Newtonsoft.Json;
+using Nino.Shared;
 using Rino.Shared.Interface;
 using UnityEngine;
 
@@ -110,7 +111,8 @@ namespace Rino.Shared.Data
         // TODO: Convert Chart
         public RinoChart ConvertToRino()
         {
-            return null;
+            var rino = new RinoChart();
+            return rino;
         }
     }
 }

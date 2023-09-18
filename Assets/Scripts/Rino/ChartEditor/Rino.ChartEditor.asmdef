@@ -2,7 +2,9 @@
     "name": "Rino.ChartEditor",
     "rootNamespace": "",
     "references": [
-        "GUID:4ae89ea67a1f78f4db590f20235ad901"
+        "GUID:4ae89ea67a1f78f4db590f20235ad901",
+        "GUID:6e1ceb5b6422b434084667bb46a254f6",
+        "GUID:609de991cff5c4341aef95fcd98fa066"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
