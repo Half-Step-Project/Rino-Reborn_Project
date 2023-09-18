@@ -4,6 +4,6 @@ namespace Rino.Shared.Interface
 {
     public interface IChartConvertable
     {
-        public ChartData ConvertToRino();
+        public RinoChart ConvertToRino();
     }
 }

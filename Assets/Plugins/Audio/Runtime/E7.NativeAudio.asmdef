@@ -1,11 +1,10 @@
 {
-    "name": "Rino.Shared",
+    "name": "E7.NativeAudio",
     "rootNamespace": "",
-    "references": [
-        "GUID:6e1ceb5b6422b434084667bb46a254f6",
-        "GUID:609de991cff5c4341aef95fcd98fa066"
+    "references": [],
+    "includePlatforms": [
+        "Android"
     ],
-    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

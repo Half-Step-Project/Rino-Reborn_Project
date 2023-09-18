@@ -108,7 +108,7 @@ namespace Rino.Shared.Data
         }
 
         // TODO: Convert Chart
-        public ChartData ConvertToRino()
+        public RinoChart ConvertToRino()
         {
             return null;
         }
