@@ -10,16 +10,18 @@ namespace Rino.Shared.Data
     [Serializable]
     public class RinoChart
     {
-        public MetaData metaData;
-        public LineData lineData;
+        public MetaData metaData = new();
+        public UncheckedList<LineData> lineData = new(32);
 
         public class MetaData
         {
-            public string composer, illustrator, charter;
+            public string musicName;
+            public string composerName, illustratorName, charterName;
             public string harderName;
             public string displayDiff;
-            public int realDiff;
-            public UncheckedList<BpmGroupData> bpmGroups = new();
+            public float realDiff;
+            public UncheckedList<BpmGroupData> bpmGroups = new(4);
+            public float offset;
         }
 
         public class BpmGroupData
@@ -31,7 +33,6 @@ namespace Rino.Shared.Data
 
         public class LineData
         {
-
         }
 
         public class NoteData

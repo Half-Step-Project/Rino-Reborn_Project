@@ -112,6 +112,47 @@ namespace Rino.Shared.Data
         public RinoChart ConvertToRino()
         {
             var rino = new RinoChart();
+
+            ConvertMeta();
+            ConvertLine();
+
+            void ConvertMeta()
+            {
+                rino.metaData = new RinoChart.MetaData
+                {
+                    musicName = songsName,
+                    composerName = "Pigeon Games",
+                    illustratorName = "Pigeon Games",
+                    charterName = "Pigeon Games",
+                    harderName = "??",
+                    displayDiff = "??",
+                    realDiff = -1,
+                    bpmGroups = new UncheckedList<RinoChart.BpmGroupData>(
+                        new RinoChart.BpmGroupData[]
+                        {
+                            new()
+                            {
+                                targetBeat = 0,
+                                bpmValue = baseBpm,
+                                duration = 0
+                            }
+                        }),
+                    offset = offset
+                };
+            }
+
+            void ConvertLine()
+            {
+                for (var i = 0; i < lines.Length; i++)
+                {
+                    var lineData = new RinoChart.LineData
+                    {
+
+                    };
+                    rino.lineData.Add(lineData);
+                }
+            }
+
             return rino;
         }
     }
